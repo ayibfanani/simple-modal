@@ -1,0 +1,42 @@
+@import url("close-icon.css");
+
+.block-page {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 10;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	background-color: white;
+	margin: auto;
+	top: 20%;
+	left: 0;
+	right: 0;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	z-index: 15;
+}
+
+.modal-header {
+	background-color: #D1CECE;
+	padding: 20px; 
+}
+
+.modal-title {
+	margin: 0;
+	text-align: center;
+}
+
+.modal-content {
+	background-color: #E1E1E1;
+	padding: 30px 40px;
+	line-height: 25px;
+}
