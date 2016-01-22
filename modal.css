@@ -1,4 +1,47 @@
-@import url("close-icon.css");
+.modal-close {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    transition: transform .25s ease-in-out;
+}
+.modal-close:hover {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.modal-close:before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    height: 0;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+.modal-close:after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    height: 0;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
 
 .block-page {
 	display: none;
