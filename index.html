@@ -4,31 +4,266 @@
 	<meta charset="UTF-8">
 	<title>Jquery Basic</title>
 	<link rel="stylesheet" type="text/css" href="http://daneden.github.io/animate.css/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="modal.css">		
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300,100' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/modal.css">		
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: "Lato";
+			background: #49A09D;
+		}
+		.container {
+			width: 768px;
+			margin: 0 auto;
+		}
+		header {
+			background: #0E8884;
+		}
+		header, section {
+			padding: 40px;
+		}
+		header h1, header p, footer p {
+			padding: 0;
+			margin: 0;
+		}
+		header h1 {
+			font-size: 50px;
+			color: white;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+		}
+		header p, footer p {
+			color: white;
+			font-weight: 300;
+			text-align: center;
+		}
+		footer {
+			background: #0E8884;
+			padding: 20px 0;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+		center div {
+			padding: 15px 0;	
+		}
+		.btn {
+			margin: 0 10px;
+			padding: 20px;
+			font-size: 15px;
+			border: 0;
+			background: #0E8884;
+			color: white;
+			border: 3px solid #0E8884;
+			transition: ease-in-out 0.3s;
+		}
+		.btn:hover {
+			background: white;
+			color: #0E8884;
+			cursor: pointer;
+		}
+		a {
+			text-decoration: none;
+			color: #D1D1D1;
+		}
+		.modal-jello {
+			width: 30%;
+		}
+		.modal-flipInX {
+			width: 20%;
+		}
+		.modal-zoomIn {
+			width: 15%;
+		}
+		.modal-bounceIn {
+			width: 30%;
+		}
+	</style>
 </head>
 <body>
-	
-	<button data-target="#mymodal-1" class="modal-btn">Modal Jello</button>
-	
-	<div id="mymodal-1" class="modal" data="modal-box">
-		<div class="modal-close"></div>
-		<div class="modal-header">
-			<h1 class="modal-title">Title</h1>
+		
+	<header>
+		<div class="container">
+			<h1>Simple Modal</h1>
+			<p>by <a href="https://github.com/ayibfanani"><b>ayibfanani</b></a></p>
+			<p style="margin-top: 20px; font-size: 20px">This is a Modal with Animation ( <a href="https://daneden.github.io/animate.css/"><b>animate.css</b></a> )</p>
 		</div>
-		<div class="modal-content">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</header>
+
+	<section>
+		<div class="container">
+
+			<center>
+				<div>
+					<button data-target="#mymodal-1" class="btn modal-jello">Jello</button>
+					<button data-target="#mymodal-2" class="btn modal-flipInX">Flip In X</button>
+				</div>
+				<div>
+					<button data-target="#mymodal-3" class="btn modal-zoomIn">Zoom In</button>
+					<button data-target="#mymodal-4" class="btn modal-tada">Tada</button>
+					<button data-target="#mymodal-5" class="btn modal-bounceIn">Bounce In</button>
+				</div>
+				<div>
+					<button data-target="#mymodal-6" class="btn modal-fadeInLeft">Fade In Left</button>
+					<button data-target="#mymodal-7" class="btn modal-lightSpeedIn">Light Speed In</button>
+					<button data-target="#mymodal-8" class="btn modal-slideInUp">Slide In Up</button>
+				</div>
+			</center>
+
+			<div id="mymodal-1" class="modal" data="modal-box">
+				<div class="modal-close"></div>
+				<div class="modal-header">
+					<h1 class="modal-title">Title</h1>
+				</div>
+				<div class="modal-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+
+			<div id="mymodal-2" class="modal" data="modal-box">
+				<div class="modal-close"></div>
+				<div class="modal-header">
+					<h1 class="modal-title">Title</h1>
+				</div>
+				<div class="modal-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+
+			<div id="mymodal-3" class="modal" data="modal-box">
+				<div class="modal-close"></div>
+				<div class="modal-header">
+					<h1 class="modal-title">Title</h1>
+				</div>
+				<div class="modal-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+
+			<div id="mymodal-4" class="modal" data="modal-box">
+				<div class="modal-close"></div>
+				<div class="modal-header">
+					<h1 class="modal-title">Title</h1>
+				</div>
+				<div class="modal-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+
+			<div id="mymodal-5" class="modal" data="modal-box">
+				<div class="modal-close"></div>
+				<div class="modal-header">
+					<h1 class="modal-title">Title</h1>
+				</div>
+				<div class="modal-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+
+			<div id="mymodal-6" class="modal" data="modal-box">
+				<div class="modal-close"></div>
+				<div class="modal-header">
+					<h1 class="modal-title">Title</h1>
+				</div>
+				<div class="modal-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+
+			<div id="mymodal-7" class="modal" data="modal-box">
+				<div class="modal-close"></div>
+				<div class="modal-header">
+					<h1 class="modal-title">Title</h1>
+				</div>
+				<div class="modal-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+
+			<div id="mymodal-8" class="modal" data="modal-box">
+				<div class="modal-close"></div>
+				<div class="modal-header">
+					<h1 class="modal-title">Title</h1>
+				</div>
+				<div class="modal-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+
 		</div>
-	</div>
+	</section>
+
+	<footer>
+		<p>Copyright@2016 by ayibfanani</p>
+	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="modal.js"></script>
+	<script src="assets/modal.js"></script>
 	<script>
-		$('.modal-btn').modal();
+		$('.modal-jello').modal({
+			'animationIn': 'jello'
+		});
+		$('.modal-flipInX').modal();
+		$('.modal-zoomIn').modal({
+			'animationIn': 'zoomIn'
+		});
+		$('.modal-tada').modal({
+			'animationIn': 'tada'
+		});
+		$('.modal-bounceIn').modal({
+			'animationIn': 'bounceIn'
+		});
+		$('.modal-fadeInLeft').modal({
+			'animationIn': 'fadeInLeft'
+		});
+		$('.modal-lightSpeedIn').modal({
+			'animationIn': 'lightSpeedIn'
+		});
+		$('.modal-slideInUp').modal({
+			'animationIn': 'slideInUp'
+		});
 	</script>
 </body>
 </html>
