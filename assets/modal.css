@@ -1,0 +1,85 @@
+.modal-close {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    transition: transform .25s ease-in-out;
+}
+.modal-close:hover {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.modal-close:before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    height: 0;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+.modal-close:after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    height: 0;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+.block-page {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 10;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	background-color: white;
+	margin: auto;
+	top: 20%;
+	left: 0;
+	right: 0;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	z-index: 15;
+}
+
+.modal-header {
+	background-color: #D1CECE;
+	padding: 20px; 
+}
+
+.modal-title {
+	margin: 0;
+	text-align: center;
+}
+
+.modal-content {
+	background-color: #E1E1E1;
+	padding: 30px 40px;
+	line-height: 25px;
+}
